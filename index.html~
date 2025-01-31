@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PET SHOP</title>
+  <link rel="shortcut icon" href="images/bird-cartoon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="" />
+  <!-- daisyui tailwind css cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome cdn -->
+  <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymowe"></script>
+    <!-- typed cdn:  for typewriter effect -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body class="">
+  <header class="">
+    <!--w: navbar -->
+    <nav class="bg-orange-50 w-full">
+      <div class="navbar ">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-xl"><img src="images/logo-header.png" alt="" /><span
+              class="text-orange-300 hidden sm:bock"> PET SHOP</span></a>
+        </div>
+        <div class="navbar-center hidden md:flex">
+          <ul class="menu menu-horizontal px-1 text-gray-500 font-semibold">
+            <li><a>Find a pet</a></li>
+            <li><a>Breeds </a></li>
+            <li><a>Contact us </a></li>
+          </ul>
+        </div>
+        <div class="navbar-end  ">
+          <div class="dropdown w-fit  -left-[10px] sm:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content w-fit -left-[100px]  bg-base-100 rounded-box z-[1] mt-3  p-2 shadow text-gray-500 font-semibold">
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds </a></li>
+              <li><a>Contact us </a></li>
+            </ul>
+          </div>
+          <div class="hidden sm:block">
+            <a class="ml3 font-bold">
+              <i class="fa-regular fa-bell"></i>
+              </i> </a>
+
+            <a class="ml-3 font-bold"><i class="fas fa-search"></i> </a>
+            <a class="ml-3 btn btn-outline btn-primary text-[#fff] font-bold">
+              Login</a>
+            <a class=" ml-3 btn  btn-warning text-[#fff] font-bold">
+              Register</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--w: banner section -->
+    <div class="relative border border-red-500 md:p-2 max-w-[1320px] mx-auto flex flex-col">
+        <!--text  -->
+        <div class="space-y-4  w-1/ sm:w-auto absolute lg:left-[13%] lg:top-[18%] md:left-[3%] md:top-[10%] left-[2%] top-[2%] z-10">
+                        
+            <h2 id="element" class="sm:text-3xl text-xl font-bold drop-shadow-xl " >
+            Pamper Your Pet, <br>  Because They Deserve <br> the Best
+          </h2>
+          <p class="md:w-auto ">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+          
+            <a class="  btn  btn-warning text-[#fff] font-bold">
+              Register</a>
+        </div>
+        <!-- image -->
+      <div class="borde rounded-xl shadow-md  sm:static absolute top-[169px]">
+        <img src="images/cat-big.png" class="p-1" alt="">
+      </div>
+
+    </div>
+  </header>
+  <main></main>
+ <!-- <script> -->
+ <!--    var typed = new Typed('#element', { -->
+ <!--      strings: ['<i>Pamper Your Pet, Because They Deserve the Best</i> '], -->
+ <!--      typeSpeed: 50, -->
+ <!--    }); -->
+ <!--  </script> -->
+
+    
+  <script>
+    var typed = new Typed('#element', {
+      strings: [
+        '<i>Pamper Your Pet, <br> </i> <strong>Because They Deserve <br> the Best</strong>',
+        'Discover a world of <span style="color: #ff6f61;">treats</span>, <span style="color: #ff6f61;">toys</span>, and <span style="color: #ff6f61;">essentials</span> handpicked for your furry friends.',
+        'Shop now and make tails wag with joy! 🐾'
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+    });
+  </script>
+  </body>
+
+</html>

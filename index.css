@@ -1,0 +1,14 @@
+.bg-image {
+  background-image: url("images/cute-pet-mid.png");
+  background-size: contain;
+  background-position: right;
+}
+
+.bg-color {
+  background-color: #f9df8a;
+}
+@media (max-width: 360px) {
+  .grid-layout {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
