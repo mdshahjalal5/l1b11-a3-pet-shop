@@ -1,23 +1,275 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link rel="stylesheet" href="" />
-    <!-- daisyui tailwind css cdn -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <header>
-      <button class="btn btn-primary">button</button>
-    </header>
-    <main></main>
-    <footer></footer>
-  </body>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PET SHOP</title>
+  <link rel="shortcut icon" href="images/bird-cartoon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="" />
+  <!-- daisyui tailwind css cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome cdn -->
+  <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymowe"></script>
+  <!-- typed cdn:  for typewriter effect -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <style>
+    @keyframes marquee {
+      from {
+        transform: translateX(100%);
+      }
+
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    .animate-marquee {
+      animation: marquee 20s linear infinite;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!--w: navbar -->
+    <nav class="bg-orange-50 w-full">
+      <div class="navbar ">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-xl"><img src="images/logo-header.png" alt="" /><span
+              class="text-orange-300 hidden sm:block"> PET SHOP</span></a>
+        </div>
+        <div class="navbar-center hidden md:flex z-10 ">
+          <ul class="menu menu-horizontal px-1 text-gray-500 font-semibold  ">
+            <li><a>Find a pet</a></li>
+            <li><a>Breeds </a></li>
+            <li><a>Contact us </a></li>
+          </ul>
+        </div>
+        <div class="navbar-end  ">
+          <div class="dropdown w-fit   sm:hidden ">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content w-fit -left-[100px]  bg-base-100 rounded-box z-[1] mt-3  p-2 shadow text-gray-500 font-semibold ">
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds </a></li>
+              <li><a>Contact us </a></li>
+            </ul>
+          </div>
+          <div class="hidden sm:block">
+            <a class="ml3 font-bold">
+              <i class="fa-regular fa-bell"></i>
+              </i> </a>
+
+            <a class="ml-3 font-bold"><i class="fas fa-search"></i> </a>
+            <a class="ml-3 btn btn-outline btn-primary text-[#fff] font-bold">
+              Login</a>
+            <a class=" ml-3 btn  btn-warning text-[#fff] font-bold">
+              Register</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--w: banner section -->
+    <div class="">
+      <div class="relative  md:p-2 max-w-[1320px] mx-auto ">
+        <!--text  -->
+        <div
+          class="space-y-4  / sm:w-auto absolute lg:left-[13%] lg:top-[18%] md:left-[3%] md:top-[10%] left-[2%] top-[2%] z-10">
+
+          <h2 id="element" class="sm:text-3xl text-xl font-bold drop-shadol ">
+            Pamper Your Pet, <br> Because They Deserve <br> the Best
+          </h2>
+          <p class="md:w-auto ">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends.
+            <span class="hidden sm:block">Shop now and make tails wag with joy!</span>
+          </p>
+
+          <a class="  btn  btn-warning text-[#fff] font-bold">
+            Register</a>
+        </div>
+        <!-- image -->
+        <div class="flex justify-center">
+          <div
+            class="borde rounded-xl shado sm:static absolute top-[169px] flex justify-center borde border-red-500 mx-auto">
+            <!-- top-[169px] -->
+            <img src="images/cat-big.png" class="p-1 h-[290px] sm:h-auto " alt="">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+  <main class="lg:container mx-auto">
+    <!-- categjory sections -->
+    <section class="mt-[499px] sm:mt-10 mb-5">
+      <h2 class="text-2xl font-semibold animate-marque sm:pl-5 text-center sm:text-left "><span class="text-orange-500 border-l-4 border-yellow-300 pl-2">Browse</span> By <span class="text-blue-400">Categories</span> </h2>
+
+      <!--w: category card container  -->
+      <div class="text-center mt-9 grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5  xl:grid-cols-6 gap-3 p-3">
+
+        <!-- category 1 -->
+        <div
+          class="border   py-5 rounded-xl shadow bg-gradient-to-r from-orange-300 to-orange-400 hover:opacity-85 hover:scale-105">
+          <div class="avatar">
+            <div class=" rounded-full bg-white">
+              <img src="images/bird-cartoon.png" class="p-4" />
+            </div>
+          </div>
+          <h2 class="text-xl font-semibold">Birds</h2>
+          <p>9 items</p>
+        </div>
+        <!-- category 2 -->
+        <div
+          class="border   py-5 rounded-xl shadow bg-gradient-to-r from-orange-300 to-orange-400 hover:opacity-85 hover:scale-105">
+          <div class="avatar">
+            <div class=" rounded-full bg-white">
+              <img src="images/cat-cartoon.png" class="p-4" />
+            </div>
+          </div>
+          <h2 class="text-xl font-semibold">Birds</h2>
+          <p>9 items</p>
+        </div>
+        <!-- category 3 -->
+        <div
+          class="border   py-5 rounded-xl shadow bg-gradient-to-r from-orange-300 to-orange-400 hover:opacity-85 hover:scale-105">
+          <div class="avatar">
+            <div class=" rounded-full bg-white">
+              <img src="images/dog-cartoon.png" class="p-4" />
+            </div>
+          </div>
+          <h2 class="text-xl font-semibold">Birds</h2>
+          <p>9 items</p>
+        </div>
+        <!-- category 4 -->
+        <div
+          class="border   py-5 rounded-xl shadow bg-gradient-to-r from-orange-300 to-orange-400 hover:opacity-85 hover:scale-105">
+          <div class="avatar">
+            <div class=" rounded-full bg-white">
+              <img src="images/bird-cartoon.png" class="p-4" />
+            </div>
+          </div>
+          <h2 class="text-xl font-semibold">Birds</h2>
+          <p>9 items</p>
+        </div>
+        <!-- category 5 -->
+        <div
+          class="border   py-5 rounded-xl shadow bg-gradient-to-r from-orange-300 to-orange-400 hover:opacity-85 hover:scale-105">
+          <div class="avatar">
+            <div class=" rounded-full bg-white">
+              <img src="images/fish-cartoon.png" class="p-4" />
+            </div>
+          </div>
+          <h2 class="text-xl font-semibold">Birds</h2>
+          <p>9 items</p>
+        </div>
+        <!-- category 6 -->
+        <div
+          class="border   py-5 rounded-xl shadow bg-gradient-to-r from-orange-300 to-orange-400 hover:opacity-85 hover:scale-105">
+          <div class="avatar">
+            <div class=" rounded-full bg-white">
+              <img src="images/mouse-cartoon.png" class="p-4" />
+            </div>
+          </div>
+          <h2 class="text-xl font-semibold">Birds</h2>
+          <p>9 items</p>
+        </div>
+        <!-- category 7 -->
+        <div
+          class="border   py-5 rounded-xl shadow bg-gradient-to-r from-orange-300 to-orange-400 hover:opacity-85 hover:scale-105">
+          <div class="avatar">
+            <div class=" rounded-full bg-white">
+              <img src="images/bird-cartoon.png" class="p-4" />
+            </div>
+          </div>
+          <h2 class="text-xl font-semibold">Birds</h2>
+          <p>9 items</p>
+        </div>
+        <!-- category 8 -->
+        <div
+          class="border   py-5 rounded-xl shadow bg-gradient-to-r from-orange-300 to-orange-400 hover:opacity-85 hover:scale-105">
+          <div class="avatar">
+            <div class=" rounded-full bg-white">
+              <img src="images/cat-cartoon.png" class="p-4" />
+            </div>
+          </div>
+          <h2 class="text-xl font-semibold">Birds</h2>
+          <p>9 items</p>
+        </div>
+        <!-- category 9 -->
+        <div
+          class="border   py-5 rounded-xl shadow bg-gradient-to-r from-orange-300 to-orange-400 hover:opacity-85 hover:scale-105">
+          <div class="avatar">
+            <div class=" rounded-full bg-white">
+              <img src="images/dog-cartoon.png" class="p-4" />
+            </div>
+          </div>
+          <h2 class="text-xl font-semibold">Birds</h2>
+          <p>9 items</p>
+        </div>
+        <!-- category 10 -->
+
+        <div
+          class="border   py-5 rounded-xl shadow bg-gradient-to-r from-orange-300 to-orange-400 hover:opacity-85 hover:scale-105">
+          <div class="avatar">
+            <div class=" rounded-full bg-white">
+              <img src="images/fish-cartoon.png" class="p-4" />
+            </div>
+          </div>
+          <h2 class="text-xl font-semibold">Birds</h2>
+          <p>9 items</p>
+        </div>
+        <!-- category 11 -->
+        <div
+          class="border   py-5 rounded-xl shadow bg-gradient-to-r from-orange-300 to-orange-400 hover:opacity-85 hover:scale-105">
+          <div class="avatar">
+            <div class=" rounded-full bg-white">
+              <img src="images/bird-cartoon.png" class="p-4" />
+            </div>
+          </div>
+          <h2 class="text-xl font-semibold">Birds</h2>
+          <p>9 items</p>
+        </div>
+        <!-- category 12 -->
+        <div
+          class="border   py-5 rounded-xl shadow bg-gradient-to-r from-orange-300 to-orange-400 hover:opacity-85 hover:scale-105">
+          <div class="avatar">
+            <div class=" rounded-full bg-white">
+              <img src="images/cat-cartoon.png" class="p-4" />
+            </div>
+          </div>
+          <h2 class="text-xl font-semibold">Birds</h2>
+          <p>9 items</p>
+        </div>
+
+      </div>
+    </section>
+    <!-- trending pets section -->
+    <section class="max-w-[1601px] mx-auto">
+              <h2 class="text-2xl font-semibold animate-marque sm:pl-5 text-center sm:text-left "><span class="text-orange-500 border-l-4 border-yellow-300 pl-2">Trending</span> Pet <span class="text-blue-400">Products</span> </h2>
+
+    </section>
+  </main>
+  <!-- script for typed  -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: [
+        '<i>Pamper Your Pet, <br> </i> <strong>Because They Deserve <br> the Best</strong>',
+        'Discover a world of <span style="color: #ff6f61;">treats</span>, <span style="color: #ff6f61;">toys  </span>, <br> and <span style="color: #ff6f61;">essentials</span> handpicked <br> for your furry friends.',
+        'Shop now and make tails wag with joy! 🐾'
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+    });
+  </script>
+</body>
+
 </html>
