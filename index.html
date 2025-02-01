@@ -82,8 +82,7 @@
         </div>
         <!-- image -->
         <div class="flex justify-center">
-          <div
-            class="borde rounded-xl shado sm:static absolute top-[169px] flex justify-center mx-auto">
+          <div class="borde rounded-xl shado sm:static absolute top-[169px] flex justify-center mx-auto">
             <!-- top-[169px] -->
             <img src="images/cat-big.png" class="p-1 h-[290px] sm:h-auto " alt="">
           </div>
@@ -240,15 +239,15 @@
       </div>
     </section>
     <!-- trending pets section -->
-    <section class="max-w-[1601px] mx-auto px-5">
+    <section class="px-5 py-16  bg-gray-50 rounded-md shadow">
       <h2 class="text-2xl font-semibold animate-marque sm:pl-5 text-center sm:text-left  mb-10"><span
           class="text-orange-500 border-l-4 border-yellow-300 pl-2">Trending</span> Pet <span
           class="text-blue-400">Products</span> </h2>
 
       <!--w: trending whole container  -->
-      <div class="md:flex  gap-3 ">
+      <div class="md:flex  gap-3 max-w-[1601px] mx-auto ">
         <!-- left dog content -->
-        <div style="background-size: 170p 271p;"
+        <div
           class="rounded-2xl max-w-[424px] flex-[1] border px-2  pl-3 pt-7 py-3 h-[380px] space-y-3 bg-[url('images/cute-pet-small.png')] -pr-3 bg-right bg-no-repeat bg-color mb-5 md:mb-auto mx-auto">
           <div class="space-y-3 ">
             <h2 class="sm:text-3xl text-xl font-bold drop-shadol ">
@@ -264,21 +263,25 @@
 
         </div>
         <!--w: right content  card container-->
-        <div class="flex-[1.5] grid lg:grid-cols-2 xl:grid-cols-3 grid-cols-2 gap-5 grid-layout">
+        <div class="flex-[1.5] grid lg:grid-cols-2 xl:grid-cols-3 grid-cols-2 gap-5 grid-layout ">
           <!-- card 1 -->
-          <div class="flex rounded-xl shadow-sm border    items-center">
-            <div class="h-[100px] w-[100px] flex items-center justify-center  ">
-              <img src="images/dog-cartoon.png" alt="">
-
+          <div class="flex rounded-xl shadow-sm border  p-2 gap-2  items-center bg-white">
+            <div class=" flex items-center justify-center  ">
+              <div class="avatar w-[50%]">
+                <div class="w-24 rounded-xl bg-orange-100 !flex items-center justify-center">
+                  <img src="images/dog-cartoon.png" class="!h-[50px] !w-[50px]" alt="">
+                </div>
+              </div>
             </div>
             <div>
               <i class="fa-solid text-yellow-500 fa-star"></i> <span> 4.5</span>
-              <h2 class="text-xl font-medium ">Pet Bed</h2>
-              <h3 class="text-xl font-medium ">$39.99</h3>
+              <h2 class=" font-medium ">Pet Bed</h2>
+              <h3>$39.99</h3>
             </div>
           </div>
           <!-- card 1 -->
           <div class="flex rounded-xl shadow-sm border   items-center">
+
             <div class="h-[100px] w-[100px] flex items-center justify-center  ">
               <img src="images/dog-cartoon.png" alt="">
 
@@ -418,35 +421,147 @@
 
       </div>
     </section>
+
+    <!--w: faq section -->
+    <section class="my-20 ">
+      <h2 class="text-2xl sm:text-4xl font-semibold animate-marque sm:pl-5 text-center  mb-20"><span
+          class="text-orange-500 border-l-4 border-yellow-300 pl-2">Everything</span> You <span
+          class="text-blue-400">Need </span>to Know 🐾</h2>
+
+
+
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-9">
+        <!-- faq image -->
+        <div class="lg:flex-[1] shadow rounded-3xl xl:h-[10%]">
+          <img src="images/qna.jpg" class="shadow-xl rounded-3xl" alt="" />
+        </div>
+        <!--w: accordian  QNA -->
+        <div class="lg:flex-[1.2] xl:flex-[1.5]">
+          <div class="collapse collapse-arrow bg-base-200 mb-3 border border-blue-400">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title sm:text-xl font-medium">
+              1. Q: Are the pets sold here healthy and vet-checked?
+            </div>
+            <div class="collapse-content">
+              <p>A: Yes, all pets in our shop undergo thorough health checks by licensed veterinarians before being
+                offered for adoption or sale. We provide health certificates and vaccination records (where applicable)
+                to ensure your new pet is happy and healthy!</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 mb-3 border border-blue-400">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title sm:text-xl font-medium">
+              2. Q: What is your return/exchange policy for pets or pet products?
+            </div>
+            <div class="collapse-content">
+              <p></p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 mb-3 border border-blue-400">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title sm:text-xl font-medium">
+              3. Q: Do you offer guidance for first-time pet owners?
+            </div>
+            <div class="collapse-content">
+              <p>A: Absolutely! We provide free starter guides on pet care, nutrition, and training. You can also
+                schedule a consultation with our in-house experts to discuss breed-specific needs, grooming, and more.
+                Your pet’s happiness is our priority!</p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow bg-base-200 mb-3 border border-blue-400">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title sm:text-xl font-medium">
+              4. Q: Can I purchase a pet as a gift for someone else?
+            </div>
+            <div class="collapse-content">
+              <p>A: While we appreciate the gesture, pets are lifelong commitments. We recommend gifting a "Pet Adoption
+                Certificate" instead, allowing the recipient to choose their ideal companion after a consultation with
+                our team.
+
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 mb-3 border border-blue-400">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title sm:text-xl font-medium">
+              5. Q: Do you offer delivery services for pets or supplies?
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 mb-3 border border-blue-400">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title sm:text-xl font-medium">
+              help you be a more focused and legally compliant bike rider.
+            </div>
+            <div class="collapse-content">
+              <p>
+                This will help you be a more focused and legally compliant
+                bike rider.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!--w: subcription section -->
+    <section class="relative mt-[500px] ">
+    </section>
   </main>
-  <footer class="pl-7 grid grid-cols-1  md:grid-cols-3 gap-3 md:justify-items-center sm:px-20  mt-20 pt-28 pb-20 bg-[#F9DF8A] md:items-center">
+
+  <footer class="mt-20  relative">
+    <!--w: subscripion container -->
+    <div
+      class="absolute flex md:flex-row flex-col  p-6 pb-6 md:gap-8  rounded-xl shadow max-w-[1320px] mx-auto bg-[#FFF9F4] 2xl:left-[30%]  sm:bottom-[69%] sm:left-[20%] bottom-[79%] left-[2%]">
+      <!--w: image -->
+      <div class="  flex items-star justify-center">
+        <img src="images/cute-pet-small.png"  alt="">
+      </div>
+      <!--w: text content -->
+      <div class="sm:space-y-6 space-y-2  p-1 ">
+        <h2 class="text-2xl font-semibold  pl-1  "><span
+            class="text-orange-500  border-yellow-300 pl-2">Get</span> Pawesome <span
+            class="text-blue-400">News </span> </h2>
+        <p>Exclusive training tips, ticks, product deals and more.</p>
+        <input type="text" placeholder="Enter email here" class="input input-bordered input-accent w-full max-w-xs" />
+
+        <a class="btn  btn-warning text-[#fff] font-bold">
+          Subscribe</a>
+      </div>
+    </div>
+
     <!--w: footer container -->
-    <!-- column 1 -->
-    <div>
-      <div class="flex items-center gap-3">
-        <img src="images/logo-footer.png" alt="">
-        <h2 class="text-3xl font-medium">Browse Pets</h2>
-      </div>
-      <p class="text-gray-600"> Discover a world of treats. <br>
-        toys, and essentials handpicked for</p>
-
-    </div>
-    <!-- column 2  -->
-    <div class="text-gray-600 font-medium">
-      <p>Find a pet</p>
-      <p>Breeds</p>
-      <p>Contact us</p>
-    </div>
-    <!-- column 3 -->
-    <div class="space-y-2">
-      <p>Follow Us</p>
-      <div class="flex gap-3">
-        <p><i class="fa-brands fa-facebook"></i></p>
-        <p><i class="fa-brands fa-instagram"></i></p>
-        <p><i class="fa-brands fa-linkedin"></i></p>
-        <p><i class="fa-brands fa-youtube"></i></p>
+    <div
+      class="pl-7 grid grid-cols-1  md:grid-cols-3 gap-5 md:justify-items-center sm:px-20   pt-28 pb-20 bg-[#F9DF8A] md:items-center">
+      <!-- column 1 -->
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="images/logo-footer.png" alt="">
+          <h2 class="text-3xl font-medium">Browse Pets</h2>
+        </div>
+        <p class="text-gray-600"> Discover a world of treats. <br>
+          toys, and essentials handpicked for</p>
 
       </div>
+      <!-- column 2  -->
+      <div class="text-gray-600 font-medium">
+        <p>Find a pet</p>
+        <p>Breeds</p>
+        <p>Contact us</p>
+      </div>
+      <!-- column 3 -->
+      <div class="space-y-2">
+        <p>Follow Us</p>
+        <div class="flex gap-3">
+          <p><i class="fa-brands fa-facebook"></i></p>
+          <p><i class="fa-brands fa-instagram"></i></p>
+          <p><i class="fa-brands fa-linkedin"></i></p>
+          <p><i class="fa-brands fa-youtube"></i></p>
+
+        </div>
+      </div>
+
     </div>
   </footer>
 
